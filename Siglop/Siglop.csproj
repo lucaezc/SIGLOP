@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DE9A99A-AA4C-45EA-AE7F-C26699B67DE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIGLOP</RootNamespace>
+    <AssemblyName>SIGLOP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SIGLOP Logo 2.ico</ApplicationIcon>
+    <StartupObject>Siglop.Program</StartupObject>
+    <ManifestCertificateThumbprint>961A00FF5EE3166DD3D279932F61790C8570DFB1</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Siglop_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>C:\Users\LucaEzC\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>SIGLOP</ProductName>
+    <PublisherName>RSA</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABM Contactos\AltaYModificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Contactos\AltaYModificacion.designer.cs">
+      <DependentUpon>AltaYModificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Productos\AltaDeProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Productos\AltaDeProducto.designer.cs">
+      <DependentUpon>AltaDeProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Productos\ModificarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Productos\ModificarProducto.designer.cs">
+      <DependentUpon>ModificarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Rol\AltaDeRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Rol\AltaDeRol.designer.cs">
+      <DependentUpon>AltaDeRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Rol\ModificacionDeRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Rol\ModificacionDeRol.designer.cs">
+      <DependentUpon>ModificacionDeRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Usuario\AltaDeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Usuario\AltaDeUsuario.designer.cs">
+      <DependentUpon>AltaDeUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM Usuario\ModificacionDeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM Usuario\ModificacionDeUsuario.designer.cs">
+      <DependentUpon>ModificacionDeUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion BD\dbmanager.cs" />
+    <Compile Include="Configuracion\Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Configuracion.designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Opciones\Opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Opciones\Opciones.designer.cs">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Parametrizacion\Detalles Flujo de Caja\DetallesFlujoDeCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Parametrizacion\Detalles Flujo de Caja\DetallesFlujoDeCaja.designer.cs">
+      <DependentUpon>DetallesFlujoDeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Parametrizacion\Materias Primas\MateriasPrimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Parametrizacion\Materias Primas\MateriasPrimas.designer.cs">
+      <DependentUpon>MateriasPrimas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Parametrizacion\Parametrizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Parametrizacion\Parametrizacion.designer.cs">
+      <DependentUpon>Parametrizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Roles\Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Roles\Roles.designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Usuarios\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Usuarios\Usuarios.designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\Agenda\Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Agenda\Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\Catalogo de Productos\Calculo de Materiales\CalculoDeMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Catalogo de Productos\Calculo de Materiales\CalculoDeMateriales.designer.cs">
+      <DependentUpon>CalculoDeMateriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\Catalogo de Productos\CatálogoDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Catalogo de Productos\CatálogoDeProductos.Designer.cs">
+      <DependentUpon>CatálogoDeProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\Consultas\ConsultaFlujoDeCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Consultas\ConsultaFlujoDeCaja.designer.cs">
+      <DependentUpon>ConsultaFlujoDeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\Gestion de Stock\Gestion de Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Gestion de Stock\Gestion de Stock.Designer.cs">
+      <DependentUpon>Gestion de Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\Gestion Flujo de Caja\GestionFlujoDeCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Gestion Flujo de Caja\GestionFlujoDeCaja.designer.cs">
+      <DependentUpon>GestionFlujoDeCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal\Reportes\ReporteGenerado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Reportes\ReporteGenerado.Designer.cs">
+      <DependentUpon>ReporteGenerado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABM Contactos\AltaYModificacion.resx">
+      <DependentUpon>AltaYModificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Productos\AltaDeProducto.resx">
+      <DependentUpon>AltaDeProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Productos\ModificarProducto.resx">
+      <DependentUpon>ModificarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Rol\AltaDeRol.resx">
+      <DependentUpon>AltaDeRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Rol\ModificacionDeRol.resx">
+      <DependentUpon>ModificacionDeRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Usuario\AltaDeUsuario.resx">
+      <DependentUpon>AltaDeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM Usuario\ModificacionDeUsuario.resx">
+      <DependentUpon>ModificacionDeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Opciones\Opciones.resx">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Parametrizacion\Detalles Flujo de Caja\DetallesFlujoDeCaja.resx">
+      <DependentUpon>DetallesFlujoDeCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Parametrizacion\Materias Primas\MateriasPrimas.resx">
+      <DependentUpon>MateriasPrimas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Parametrizacion\Parametrizacion.resx">
+      <DependentUpon>Parametrizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Roles\Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Usuarios\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Agenda\Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Catalogo de Productos\Calculo de Materiales\CalculoDeMateriales.resx">
+      <DependentUpon>CalculoDeMateriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Catalogo de Productos\CatálogoDeProductos.resx">
+      <DependentUpon>CatálogoDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Consultas\ConsultaFlujoDeCaja.resx">
+      <DependentUpon>ConsultaFlujoDeCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Gestion de Stock\Gestion de Stock.resx">
+      <DependentUpon>Gestion de Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Gestion Flujo de Caja\GestionFlujoDeCaja.resx">
+      <DependentUpon>GestionFlujoDeCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Reportes\ReporteGenerado.resx">
+      <DependentUpon>ReporteGenerado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal\Reportes\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Siglop_TemporaryKey.pfx" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Menu Principal\Reportes\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal\Reportes\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SIGLOP Logo 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

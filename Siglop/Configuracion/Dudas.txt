@@ -1,0 +1,2 @@
+1. MODIFICACION DE ROL: Hace un acceso a la vez. :(
+2. OPCIONES: Que activen y desactiven las ventanas de las opciones seleccionadas.
